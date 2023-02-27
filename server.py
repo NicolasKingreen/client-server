@@ -21,6 +21,7 @@ class Server:
     def __init__(self):
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self._socket.bind(SERVER_ADDRESS)
+        self._socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
         self.connections = []
         self.conn_threads = []

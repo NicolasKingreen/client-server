@@ -6,8 +6,8 @@ from time import sleep
 
 from util import format_addr
 
-
-SERVER_ADDRESS = ("192.168.160.28", 5050)
+SERVER_HOST = ""
+SERVER_ADDRESS = (SERVER_HOST, 5050)
 MESSAGE_STARTS_WITH_TIMESTEMP_PATTERN = r'\d{2}:\d{2}:\d{2} *'
 
 
